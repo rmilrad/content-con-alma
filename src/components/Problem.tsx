@@ -1,7 +1,15 @@
 
 import React from 'react';
+import { Button } from '@/components/ui/button';
 
 const Problem = () => {
+  const scrollToForm = () => {
+    const formElement = document.getElementById('signup-form');
+    if (formElement) {
+      formElement.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+  
   return (
     <section id="problem-section" className="py-20 md:py-24 bg-white">
       <div className="container mx-auto px-4 md:px-8">
@@ -26,6 +34,15 @@ const Problem = () => {
             <p className="text-center font-medium text-xl mt-12 py-2">
               <span className="border-b-2 border-evo-red inline-block">Debe haber una forma de hacerlo diferente.</span>
             </p>
+            
+            <div className="flex justify-center mt-8">
+              <Button 
+                onClick={scrollToForm}
+                className="bg-evo-red hover:bg-evo-red/90 text-white text-lg font-bold px-8 py-6 rounded-md transition-colors shadow-md"
+              >
+                Deja tus datos aquí
+              </Button>
+            </div>
           </div>
         </div>
       </div>

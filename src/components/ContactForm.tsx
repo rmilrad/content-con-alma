@@ -42,9 +42,13 @@ const ContactForm = () => {
       
       <div className="container mx-auto px-4 md:px-8">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-serif font-semibold text-evo-blue mb-10 text-center">
+          <h2 className="text-2xl md:text-3xl font-serif font-semibold text-evo-blue mb-4 text-center">
             Inscríbete ahora
           </h2>
+          
+          <p className="text-lg text-evo-blue/80 mb-10 text-center">
+            Lo único que tienes que hacer es dejar tus datos aquí abajo, te contactaré con los siguientes pasos y antes de tu pago, me aseguraré que eres un buen fit para Creando con Alma. 💐
+          </p>
           
           <div className="w-full bg-white rounded-2xl shadow-md p-4 md:p-6">
             <iframe 

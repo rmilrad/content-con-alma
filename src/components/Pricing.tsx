@@ -15,7 +15,7 @@ const Pricing = () => {
       <div className="container mx-auto px-4 md:px-8">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-2xl md:text-3xl font-serif font-semibold text-evo-blue mb-8">
-            Inversión para crear contenido con Alma
+            Inversion para Crear Contenido con Alma
           </h2>
           
           <p className="text-lg text-evo-blue/80 mb-10">
