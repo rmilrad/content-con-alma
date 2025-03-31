@@ -17,10 +17,10 @@ const Program = () => {
                 <Star className="text-evo-red" fill="#f16e60" size={28} />
               </div>
               <div>
-                <h3 className="text-xl md:text-2xl font-bold text-evo-blue mb-3">
+                <h3 className="text-xl md:text-2xl font-bold text-evo-blue mb-4">
                   5 sesiones personalizadas
                 </h3>
-                <p className="text-lg text-evo-blue/80">
+                <p className="text-lg text-evo-blue/70">
                   1 por semana, 60 min cada una. Trabajaremos juntas en cada aspecto de tu contenido, desde definir tu esencia hasta estructurar una estrategia sostenible.
                 </p>
               </div>
@@ -31,10 +31,10 @@ const Program = () => {
                 <Star className="text-evo-red" fill="#f16e60" size={28} />
               </div>
               <div>
-                <h3 className="text-xl md:text-2xl font-bold text-evo-blue mb-3">
+                <h3 className="text-xl md:text-2xl font-bold text-evo-blue mb-4">
                   Material teórico y ejercicios prácticos
                 </h3>
-                <p className="text-lg text-evo-blue/80">
+                <p className="text-lg text-evo-blue/70">
                   Cuando estamos en llamada vamos a trabajar, cuando estás en tu tiempo libre puedes aprender.
                 </p>
               </div>
@@ -45,10 +45,10 @@ const Program = () => {
                 <Star className="text-evo-red" fill="#f16e60" size={28} />
               </div>
               <div>
-                <h3 className="text-xl md:text-2xl font-bold text-evo-blue mb-3">
+                <h3 className="text-xl md:text-2xl font-bold text-evo-blue mb-4">
                   Sales con un sistema de contenido claro y funcional
                 </h3>
-                <p className="text-lg text-evo-blue/80">
+                <p className="text-lg text-evo-blue/70">
                   Al finalizar, tendrás claridad en tu mensaje, un sistema organizado y contenido listo para publicar.
                 </p>
               </div>

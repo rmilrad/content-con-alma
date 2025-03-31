@@ -10,7 +10,7 @@ const About = () => {
             ¿Por qué confiar en mí para guiarte en este proceso?
           </h2>
           
-          <div className="space-y-6 text-lg text-evo-blue/90 prose prose-lg max-w-none">
+          <div className="space-y-6 text-lg text-evo-blue/90 max-w-none leading-relaxed">
             <p>
               Hola, soy Naza. Llevo tres años ayudando a mujeres a hacer crecer sus negocios usando la creación de contenido como <strong>herramienta</strong>.
             </p>
@@ -35,7 +35,7 @@ const About = () => {
               Algunas clientes comenzaron a crecer, 10, 100, 1000 seguidores con mi trabajo y otras un poco pegadas en los 200 views, nunca conectaban ni vendían.
             </p>
             
-            <p className="font-medium text-xl">
+            <p className="font-medium text-xl mt-6 mb-2">
               ¿POR QUÉ?
             </p>
             

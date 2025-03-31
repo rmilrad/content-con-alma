@@ -19,9 +19,9 @@ const Audience = () => {
                   "Te gustaría definir tu mensaje y estructura de marca y sentir esa sensación de paz al saber qué dirección tomar con tu contenido.",
                   "Valoras la autenticidad y sabes que ser tú misma es tu mayor fortaleza, pero te frustra no saber cómo convertir eso en contenido estratégico y atractivo.",
                   "Quieres un sistema para planificar contenido sin abrumarte, porque ya tienes suficiente en qué pensar con tu negocio.",
-                  "Buscas aprender a vender sin "vender"."
+                  "Buscas aprender a vender sin vender."
                 ].map((text, index) => (
-                  <div key={index} className="flex items-start gap-4 hover:translate-x-1 transition-transform duration-200">
+                  <div key={index} className="flex items-start gap-4 hover:translate-x-1 transition-transform duration-200 bg-white/60 p-4 rounded-lg">
                     <div className="bg-evo-red/10 rounded-full p-1.5 shrink-0 mt-1">
                       <Check className="text-evo-red" size={16} />
                     </div>
@@ -44,7 +44,7 @@ const Audience = () => {
                   "No estás dispuesta a cambiar la forma en que te relacionas con tu contenido y tu negocio.",
                   "No quieres dedicar tiempo a entender y estructurar tu mensaje antes de crear contenido."
                 ].map((text, index) => (
-                  <div key={index} className="flex items-start gap-4 hover:translate-x-1 transition-transform duration-200">
+                  <div key={index} className="flex items-start gap-4 hover:translate-x-1 transition-transform duration-200 bg-white/60 p-4 rounded-lg">
                     <div className="bg-red-100 rounded-full p-1.5 shrink-0 mt-1">
                       <X className="text-red-500" size={16} />
                     </div>

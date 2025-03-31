@@ -11,13 +11,6 @@ const Hero = () => {
     }
   };
 
-  const scrollToForm = () => {
-    const formElement = document.getElementById('signup-form');
-    if (formElement) {
-      formElement.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   return (
     <section className="relative py-20 md:py-32 overflow-hidden">
       <div className="absolute inset-0 bg-evo-beige/30 -z-10"></div>
@@ -38,16 +31,10 @@ const Hero = () => {
             <span className="font-medium"> abundancia</span> (ventas).
           </p>
           <div className="flex flex-col sm:flex-row gap-4 animate-slide-up opacity-0" style={{ animationDelay: "0.4s", animationFillMode: "forwards" }}>
-            <Button 
-              onClick={scrollToForm}
-              className="bg-evo-red hover:bg-evo-red/90 text-white text-lg font-medium px-8 py-6 rounded-md transition-colors"
-            >
-              Quiero crear con alma
-            </Button>
             <Button
               onClick={scrollToNextSection} 
               variant="ghost"
-              className="text-evo-blue hover:bg-transparent hover:text-evo-red font-medium flex items-center gap-2 px-8 py-6 transition-colors"
+              className="text-evo-blue hover:bg-transparent hover:text-evo-red font-medium flex items-center gap-2 px-8 py-6 transition-colors border-0"
             >
               Descubre más <ArrowDown size={16} />
             </Button>
