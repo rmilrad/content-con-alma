@@ -10,7 +10,7 @@ const About = () => {
             ¿Por qué confiar en mí para guiarte en este proceso?
           </h2>
           
-          <div className="bg-white p-8 md:p-10 rounded-2xl shadow-sm space-y-6 text-lg text-evo-blue/90">
+          <div className="space-y-6 text-lg text-evo-blue/90 prose prose-lg max-w-none">
             <p>
               Hola, soy Naza. Llevo tres años ayudando a mujeres a hacer crecer sus negocios usando la creación de contenido como <strong>herramienta</strong>.
             </p>

@@ -4,6 +4,13 @@ import { Button } from '@/components/ui/button';
 import { ArrowDown } from 'lucide-react';
 
 const Hero = () => {
+  const scrollToNextSection = () => {
+    const problemSection = document.getElementById('problem-section');
+    if (problemSection) {
+      problemSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   const scrollToForm = () => {
     const formElement = document.getElementById('signup-form');
     if (formElement) {
@@ -14,6 +21,9 @@ const Hero = () => {
   return (
     <section className="relative py-20 md:py-32 overflow-hidden">
       <div className="absolute inset-0 bg-evo-beige/30 -z-10"></div>
+      <div className="absolute inset-0 flex items-center justify-center opacity-5 -z-10">
+        <img src="/public/lovable-uploads/c36eb206-3da4-47ae-a997-568a405afae7.png" alt="" className="w-full max-w-2xl" />
+      </div>
       <div className="absolute right-0 top-0 w-full md:w-1/2 h-full opacity-10 bg-pattern bg-no-repeat bg-contain bg-right -z-10"></div>
       
       <div className="container mx-auto px-4 md:px-8">
@@ -35,9 +45,9 @@ const Hero = () => {
               Quiero crear con alma
             </Button>
             <Button
-              onClick={scrollToForm} 
-              variant="outline"
-              className="border-evo-red text-evo-blue hover:bg-evo-red/5 font-medium flex items-center gap-2 px-8 py-6 rounded-md"
+              onClick={scrollToNextSection} 
+              variant="ghost"
+              className="text-evo-blue hover:bg-transparent hover:text-evo-red font-medium flex items-center gap-2 px-8 py-6 transition-colors"
             >
               Descubre más <ArrowDown size={16} />
             </Button>

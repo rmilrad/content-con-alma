@@ -3,7 +3,7 @@ import React from 'react';
 
 const Problem = () => {
   return (
-    <section className="py-20 md:py-24 bg-white">
+    <section id="problem-section" className="py-20 md:py-24 bg-white">
       <div className="container mx-auto px-4 md:px-8">
         <div className="max-w-3xl mx-auto">
           <p className="text-xl md:text-2xl font-serif text-evo-blue/80 mb-12 leading-relaxed text-center italic">
