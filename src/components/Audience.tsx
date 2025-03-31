@@ -1,57 +1,72 @@
 
 import React from 'react';
 import { Check, X } from 'lucide-react';
+import { Card } from '@/components/ui/card';
 
 const Audience = () => {
   return (
     <section className="py-20 md:py-28 bg-white">
       <div className="container mx-auto px-4 md:px-8">
         <div className="max-w-5xl mx-auto">
+          <h2 className="text-2xl md:text-3xl font-serif font-semibold text-evo-blue mb-14 text-center">
+            ¿Es este programa para ti?
+          </h2>
+          
           <div className="grid md:grid-cols-2 gap-10 md:gap-16">
-            <div className="bg-gradient-to-br from-white to-evo-beige/30 p-8 rounded-2xl shadow-sm">
-              <h2 className="text-2xl font-serif font-semibold text-evo-blue mb-8 text-center md:text-left">
-                ¿Es para ti?
-              </h2>
-              
-              <div className="space-y-6">
-                {[
-                  "Quieres crear contenido alineado con vos y los objetivos de tu negocio, sin sentir que te estás forzando a encajar.",
-                  "Te gustaría definir tu mensaje y estructura de marca y sentir esa sensación de paz al saber qué dirección tomar con tu contenido.",
-                  "Valoras la autenticidad y sabes que ser tú misma es tu mayor fortaleza, pero te frustra no saber cómo convertir eso en contenido estratégico y atractivo.",
-                  "Quieres un sistema para planificar contenido sin abrumarte, porque ya tienes suficiente en qué pensar con tu negocio.",
-                  "Buscas aprender a vender sin vender."
-                ].map((text, index) => (
-                  <div key={index} className="flex items-start gap-4 hover:translate-x-1 transition-transform duration-200 bg-white/60 p-4 rounded-lg">
-                    <div className="bg-evo-red/10 rounded-full p-1.5 shrink-0 mt-1">
-                      <Check className="text-evo-red" size={16} />
-                    </div>
-                    <p className="text-evo-blue/90">{text}</p>
-                  </div>
-                ))}
+            <div>
+              <div className="mb-6 flex items-center gap-3">
+                <div className="h-8 w-8 bg-evo-red/10 rounded-full flex items-center justify-center">
+                  <Check className="text-evo-red h-5 w-5" />
+                </div>
+                <h3 className="text-xl font-semibold text-evo-blue">Para ti si</h3>
               </div>
+              
+              <Card className="border-0 shadow-lg bg-gradient-to-br from-white to-evo-beige/20 overflow-hidden">
+                <ul className="p-2 divide-y divide-gray-100">
+                  {[
+                    "Quieres crear contenido alineado con vos y los objetivos de tu negocio",
+                    "Te gustaría definir tu mensaje y estructura de marca con claridad",
+                    "Valoras la autenticidad y quieres convertirla en contenido estratégico",
+                    "Quieres un sistema para planificar contenido sin abrumarte",
+                    "Buscas aprender a vender sin sentir que estás vendiendo"
+                  ].map((text, index) => (
+                    <li key={index} className="p-4 flex items-start gap-3 hover:bg-white/60 transition-colors rounded-lg">
+                      <div className="bg-evo-red/10 rounded-full p-1 shrink-0 mt-1">
+                        <Check className="text-evo-red" size={16} />
+                      </div>
+                      <p className="text-evo-blue/90">{text}</p>
+                    </li>
+                  ))}
+                </ul>
+              </Card>
             </div>
             
-            <div className="bg-gradient-to-br from-white to-gray-100 p-8 rounded-2xl shadow-sm">
-              <h2 className="text-2xl font-serif font-semibold text-evo-blue mb-8 text-center md:text-left">
-                No es para ti si…
-              </h2>
-              
-              <div className="space-y-6">
-                {[
-                  "No te interesa el crecimiento personal ni profesional, solo quieres más seguidores rápidamente sin preocuparte por la calidad de tu comunidad.",
-                  "No crees en el valor de lo intangible: claridad, confianza, autenticidad y estrategia a largo plazo.",
-                  "Prefieres seguir publicando sin estrategia y esperar resultados sin hacer ajustes.",
-                  "No estás dispuesta a cambiar la forma en que te relacionas con tu contenido y tu negocio.",
-                  "No quieres dedicar tiempo a entender y estructurar tu mensaje antes de crear contenido."
-                ].map((text, index) => (
-                  <div key={index} className="flex items-start gap-4 hover:translate-x-1 transition-transform duration-200 bg-white/60 p-4 rounded-lg">
-                    <div className="bg-red-100 rounded-full p-1.5 shrink-0 mt-1">
-                      <X className="text-red-500" size={16} />
-                    </div>
-                    <p className="text-evo-blue/90">{text}</p>
-                  </div>
-                ))}
+            <div>
+              <div className="mb-6 flex items-center gap-3">
+                <div className="h-8 w-8 bg-red-100 rounded-full flex items-center justify-center">
+                  <X className="text-red-500 h-5 w-5" />
+                </div>
+                <h3 className="text-xl font-semibold text-evo-blue">No es para ti si</h3>
               </div>
+              
+              <Card className="border-0 shadow-lg bg-gradient-to-br from-white to-gray-100 overflow-hidden">
+                <ul className="p-2 divide-y divide-gray-100">
+                  {[
+                    "Solo quieres más seguidores rápidamente sin importar la calidad",
+                    "No crees en el valor de la claridad, confianza y autenticidad",
+                    "Prefieres seguir publicando sin estrategia y esperar resultados",
+                    "No estás dispuesta a cambiar tu relación con el contenido",
+                    "No quieres dedicar tiempo a estructurar tu mensaje"
+                  ].map((text, index) => (
+                    <li key={index} className="p-4 flex items-start gap-3 hover:bg-white/60 transition-colors rounded-lg">
+                      <div className="bg-red-100 rounded-full p-1 shrink-0 mt-1">
+                        <X className="text-red-500" size={16} />
+                      </div>
+                      <p className="text-evo-blue/90">{text}</p>
+                    </li>
+                  ))}
+                </ul>
+              </Card>
             </div>
           </div>
         </div>

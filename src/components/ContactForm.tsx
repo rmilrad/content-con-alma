@@ -10,14 +10,17 @@ const ContactForm = () => {
     document.body.appendChild(script);
 
     script.onload = () => {
-      if (window.iFrameResize) {
-        setTimeout(() => {
-          window.iFrameResize({
+      // Use setTimeout to ensure the function is available after script is loaded
+      setTimeout(() => {
+        // Use window object with type assertion to avoid TypeScript error
+        const w = window as any;
+        if (w.iFrameResize) {
+          w.iFrameResize({
             checkOrigin: false,
             heightCalculationMethod: "taggedElement"
           });
-        }, 30);
-      }
+        }
+      }, 30);
     };
 
     return () => {
