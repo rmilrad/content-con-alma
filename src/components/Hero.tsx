@@ -28,7 +28,7 @@ const Hero = () => {
         <img 
           src="/public/lovable-uploads/e36b68da-f91a-4167-9228-e82647752e2a.png" 
           alt="" 
-          className="w-full max-w-[200%] md:max-w-[200%]" 
+          className="w-full max-w-[160%] md:max-w-[160%]" 
         />
       </div>
       
