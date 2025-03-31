@@ -31,9 +31,6 @@ const Audience = () => {
             {/* Left side - For You */}
             <div className="bg-white rounded-2xl shadow-md p-8 border border-evo-red/10">
               <div className="flex items-center gap-3 mb-8">
-                <div className="h-12 w-12 bg-evo-red/10 rounded-full flex items-center justify-center">
-                  <Check className="text-evo-red h-6 w-6" />
-                </div>
                 <h3 className="text-2xl font-serif font-semibold text-evo-blue">Para ti si</h3>
               </div>
               
@@ -50,9 +47,6 @@ const Audience = () => {
             {/* Right side - Not For You */}
             <div className="bg-gray-50 rounded-2xl shadow-md p-8 border border-gray-100">
               <div className="flex items-center gap-3 mb-8">
-                <div className="h-12 w-12 bg-gray-200 rounded-full flex items-center justify-center">
-                  <X className="text-gray-500 h-6 w-6" />
-                </div>
                 <h3 className="text-2xl font-serif font-semibold text-evo-blue">No es para ti si</h3>
               </div>
               

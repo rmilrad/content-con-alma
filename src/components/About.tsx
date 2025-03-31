@@ -16,7 +16,7 @@ const About = () => {
               <img 
                 src="/public/lovable-uploads/f1d63896-db64-4ae0-8b82-78dc55e98a8d.png" 
                 alt="Naza" 
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover object-center"
               />
             </div>
             

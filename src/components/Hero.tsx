@@ -23,6 +23,15 @@ const Hero = () => {
       <div className="absolute inset-0 bg-evo-beige/30 -z-10"></div>
       <div className="absolute right-0 top-0 w-full md:w-1/2 h-full opacity-10 bg-pattern bg-no-repeat bg-contain bg-right -z-10"></div>
       
+      {/* Add logo to the hero background with low opacity */}
+      <div className="absolute left-0 top-0 w-full h-full flex items-center justify-center opacity-10 -z-10">
+        <img 
+          src="/public/lovable-uploads/e36b68da-f91a-4167-9228-e82647752e2a.png" 
+          alt="" 
+          className="w-full max-w-md md:max-w-lg" 
+        />
+      </div>
+      
       <div className="container mx-auto px-4 md:px-8">
         <div className="max-w-3xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-serif font-semibold text-evo-blue mb-6 leading-tight animate-fade-in">
