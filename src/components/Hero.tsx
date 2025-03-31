@@ -21,15 +21,7 @@ const Hero = () => {
   return (
     <section className="relative py-20 md:py-32 overflow-hidden">
       <div className="absolute inset-0 bg-evo-beige/30 -z-10"></div>
-      <div className="absolute inset-0 flex items-center justify-center opacity-5 -z-10">
-        <img src="/public/lovable-uploads/c36eb206-3da4-47ae-a997-568a405afae7.png" alt="" className="w-full max-w-2xl" />
-      </div>
       <div className="absolute right-0 top-0 w-full md:w-1/2 h-full opacity-10 bg-pattern bg-no-repeat bg-contain bg-right -z-10"></div>
-      
-      {/* Add profile image to the hero background with low opacity */}
-      <div className="absolute right-0 bottom-0 w-full md:w-1/3 h-full opacity-15 -z-10">
-        <img src="/public/lovable-uploads/f1d63896-db64-4ae0-8b82-78dc55e98a8d.png" alt="" className="w-full h-full object-contain object-bottom" />
-      </div>
       
       <div className="container mx-auto px-4 md:px-8">
         <div className="max-w-3xl mx-auto">
