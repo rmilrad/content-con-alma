@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Button } from '@/components/ui/button';
+import { ArrowDown } from 'lucide-react';
 
 const Hero = () => {
   const scrollToForm = () => {
@@ -11,24 +12,36 @@ const Hero = () => {
   };
 
   return (
-    <section className="py-16 md:py-24 bg-gradient-to-b from-evo-beige to-evo-cream">
+    <section className="relative py-20 md:py-32 overflow-hidden">
+      <div className="absolute inset-0 bg-evo-beige/30 -z-10"></div>
+      <div className="absolute right-0 top-0 w-full md:w-1/2 h-full opacity-10 bg-pattern bg-no-repeat bg-contain bg-right -z-10"></div>
+      
       <div className="container mx-auto px-4 md:px-8">
-        <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl md:text-5xl font-serif font-semibold text-evo-dark-brown mb-6 leading-tight">
-            <span className="text-evo-dark-pink">Deja de improvisar</span> en redes sociales.
-          </h2>
-          <p className="text-lg md:text-xl text-evo-brown mb-8 leading-relaxed">
+        <div className="max-w-3xl mx-auto">
+          <h1 className="text-4xl md:text-6xl font-serif font-semibold text-evo-blue mb-6 leading-tight animate-fade-in">
+            <span className="text-evo-red">Deja de improvisar</span> en redes sociales.
+          </h1>
+          <p className="text-lg md:text-xl text-evo-blue/80 mb-10 leading-relaxed animate-slide-up opacity-0" style={{ animationDelay: "0.2s", animationFillMode: "forwards" }}>
             Convierte tu propósito en un imán para crear contenido para tu marca personal desde un espacio de 
             <span className="font-medium"> claridad</span> (organización), 
             <span className="font-medium"> conexión</span> (comunidad), 
             <span className="font-medium"> abundancia</span> (ventas).
           </p>
-          <Button 
-            onClick={scrollToForm}
-            className="bg-evo-pink hover:bg-evo-dark-pink text-white text-lg font-medium px-8 py-3 rounded-md transition-colors"
-          >
-            Quiero crear con alma
-          </Button>
+          <div className="flex flex-col sm:flex-row gap-4 animate-slide-up opacity-0" style={{ animationDelay: "0.4s", animationFillMode: "forwards" }}>
+            <Button 
+              onClick={scrollToForm}
+              className="bg-evo-red hover:bg-evo-red/90 text-white text-lg font-medium px-8 py-6 rounded-md transition-colors"
+            >
+              Quiero crear con alma
+            </Button>
+            <Button
+              onClick={scrollToForm} 
+              variant="outline"
+              className="border-evo-red text-evo-blue hover:bg-evo-red/5 font-medium flex items-center gap-2 px-8 py-6 rounded-md"
+            >
+              Descubre más <ArrowDown size={16} />
+            </Button>
+          </div>
         </div>
       </div>
     </section>

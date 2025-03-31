@@ -14,7 +14,7 @@
     --popover: 0 0% 100%;
     --popover-foreground: 20 14.3% 4.1%;
 
-    --primary: 327 73% 70%;
+    --primary: 5 83% 66%;
     --primary-foreground: 60 9.1% 97.8%;
 
     --secondary: 20 5.9% 90%;
@@ -23,7 +23,7 @@
     --muted: 60 4.8% 95.9%;
     --muted-foreground: 25 5.3% 44.7%;
 
-    --accent: 16 15% 93%;
+    --accent: 25 84% 91%;
     --accent-foreground: 24 9.8% 10%;
 
     --destructive: 0 84.2% 60.2%;
@@ -48,7 +48,7 @@
   }
   
   body {
-    @apply bg-evo-beige text-evo-dark-brown font-sans;
+    @apply bg-white text-evo-blue font-sans;
   }
   
   h1, h2, h3, h4, h5, h6 {
@@ -62,18 +62,22 @@
   }
   
   .btn-primary {
-    @apply bg-evo-pink text-white font-semibold px-6 py-3 rounded-md hover:bg-evo-dark-pink transition-colors duration-300;
+    @apply bg-evo-red text-white font-semibold px-6 py-3 rounded-md hover:bg-evo-red/90 transition-colors duration-300;
   }
   
   .btn-secondary {
-    @apply bg-transparent border-2 border-evo-pink text-evo-dark-brown font-semibold px-6 py-3 rounded-md hover:bg-evo-pink hover:text-white transition-colors duration-300;
+    @apply bg-transparent border-2 border-evo-red text-evo-blue font-semibold px-6 py-3 rounded-md hover:bg-evo-red hover:text-white transition-colors duration-300;
   }
   
   .section {
-    @apply py-12 md:py-24;
+    @apply py-16 md:py-24;
+  }
+  
+  .section-alt {
+    @apply py-16 md:py-24 bg-evo-beige/40;
   }
   
   .card-feature {
-    @apply bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow duration-300;
+    @apply bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow duration-300;
   }
 }

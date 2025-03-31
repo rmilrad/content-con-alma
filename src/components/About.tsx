@@ -3,14 +3,14 @@ import React from 'react';
 
 const About = () => {
   return (
-    <section className="py-16 md:py-20 bg-evo-beige">
+    <section className="py-20 md:py-28 bg-evo-beige/40">
       <div className="container mx-auto px-4 md:px-8">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-serif font-semibold text-evo-dark-brown mb-8 text-center">
+          <h2 className="text-2xl md:text-3xl font-serif font-semibold text-evo-blue mb-10 text-center">
             ¿Por qué confiar en mí para guiarte en este proceso?
           </h2>
           
-          <div className="space-y-6 text-lg text-evo-brown">
+          <div className="bg-white p-8 md:p-10 rounded-2xl shadow-sm space-y-6 text-lg text-evo-blue/90">
             <p>
               Hola, soy Naza. Llevo tres años ayudando a mujeres a hacer crecer sus negocios usando la creación de contenido como <strong>herramienta</strong>.
             </p>
@@ -27,15 +27,15 @@ const About = () => {
               Recuerdo mi primera estrategia de contenido: cobraba por horas, pero solo facturé el tiempo que me llevó crear la presentación... no todo el tiempo que pasé en YouTube aprendiendo a hacerla. 😂
             </p>
             
-            <p className="font-medium text-center my-6">
-              <span className="text-evo-dark-pink">El verdadero: fake it 'til you make it.</span>
+            <p className="font-medium text-center my-8 text-evo-red text-xl">
+              El verdadero: fake it 'til you make it.
             </p>
             
             <p>
               Algunas clientes comenzaron a crecer, 10, 100, 1000 seguidores con mi trabajo y otras un poco pegadas en los 200 views, nunca conectaban ni vendían.
             </p>
             
-            <p className="font-medium">
+            <p className="font-medium text-xl">
               ¿POR QUÉ?
             </p>
             
