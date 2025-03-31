@@ -23,12 +23,12 @@ const Hero = () => {
       <div className="absolute inset-0 bg-evo-beige/30 -z-10"></div>
       <div className="absolute right-0 top-0 w-full md:w-1/2 h-full opacity-10 bg-pattern bg-no-repeat bg-contain bg-right -z-10"></div>
       
-      {/* Add logo to the hero background with low opacity */}
-      <div className="absolute left-0 top-0 w-full h-full flex items-center justify-center opacity-10 -z-10">
+      {/* Add logo to the hero background with increased size and lighter opacity */}
+      <div className="absolute left-0 top-0 w-full h-full flex items-center justify-center opacity-5 -z-10">
         <img 
           src="/public/lovable-uploads/e36b68da-f91a-4167-9228-e82647752e2a.png" 
           alt="" 
-          className="w-full max-w-md md:max-w-lg" 
+          className="w-full max-w-[200%] md:max-w-[200%]" 
         />
       </div>
       
