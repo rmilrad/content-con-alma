@@ -12,14 +12,26 @@ const Solution = () => {
             Creando con Alma
           </h2>
           
-          <div className="space-y-6 text-lg text-evo-blue/90 mb-12">
-            <p>
-              Es hora de dejar de seguir tendencias y empezar a crear contenido que realmente hable de vos y de tu negocio. Que al final, los dos se interconectan.
-            </p>
+          <div className="md:flex items-center gap-10 mb-12">
+            <div className="md:w-1/2 space-y-6 text-lg text-evo-blue/90 mb-6 md:mb-0">
+              <p>
+                Es hora de dejar de seguir tendencias y empezar a crear contenido que realmente hable de vos y de tu negocio. Que al final, los dos se interconectan.
+              </p>
+              
+              <p>
+                Es hora de desarrollar una estrategia que te ayude a conectar con tu audiencia, a vender sin "vender" y, sobre todo, a disfrutar el proceso sin sentir que estás dando palos de ciego.
+              </p>
+            </div>
             
-            <p>
-              Es hora de desarrollar una estrategia que te ayude a conectar con tu audiencia, a vender sin "vender" y, sobre todo, a disfrutar el proceso sin sentir que estás dando palos de ciego.
-            </p>
+            <div className="md:w-1/2 flex justify-center">
+              <div className="w-48 h-60 md:w-56 md:h-72 rounded-xl overflow-hidden shadow-lg transform rotate-3 border-4 border-white">
+                <img 
+                  src="/public/lovable-uploads/e793387f-6781-4026-a0e9-1e15c2b12690.png" 
+                  alt="Creando con alma" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
           </div>
           
           <h3 className="text-2xl md:text-3xl font-serif font-medium text-evo-blue mb-8 text-center">

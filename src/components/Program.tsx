@@ -17,7 +17,7 @@ const Program = () => {
                 <Star className="text-evo-red" fill="#f16e60" size={28} />
               </div>
               <div>
-                <h3 className="text-xl md:text-2xl font-bold text-evo-blue mb-3">
+                <h3 className="text-2xl md:text-3xl font-serif font-bold text-evo-blue mb-3">
                   5 sesiones personalizadas
                 </h3>
                 <p className="text-base md:text-lg text-evo-blue/70">
@@ -31,7 +31,7 @@ const Program = () => {
                 <Star className="text-evo-red" fill="#f16e60" size={28} />
               </div>
               <div>
-                <h3 className="text-xl md:text-2xl font-bold text-evo-blue mb-3">
+                <h3 className="text-2xl md:text-3xl font-serif font-bold text-evo-blue mb-3">
                   Material teórico y ejercicios prácticos
                 </h3>
                 <p className="text-base md:text-lg text-evo-blue/70">
@@ -45,7 +45,7 @@ const Program = () => {
                 <Star className="text-evo-red" fill="#f16e60" size={28} />
               </div>
               <div>
-                <h3 className="text-xl md:text-2xl font-bold text-evo-blue mb-3">
+                <h3 className="text-2xl md:text-3xl font-serif font-bold text-evo-blue mb-3">
                   Sales con un sistema de contenido claro y funcional
                 </h3>
                 <p className="text-base md:text-lg text-evo-blue/70">

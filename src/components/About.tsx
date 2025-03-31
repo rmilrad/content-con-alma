@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Avatar, AvatarImage } from '@/components/ui/avatar';
 
 const About = () => {
   return (
@@ -10,15 +11,29 @@ const About = () => {
             ¿Por qué confiar en mí para guiarte en este proceso?
           </h2>
           
-          <div className="space-y-6 text-lg text-evo-blue/90 max-w-none leading-relaxed">
-            <p>
-              Hola, soy Naza. Llevo tres años ayudando a mujeres a hacer crecer sus negocios usando la creación de contenido como <strong>herramienta</strong>.
-            </p>
+          <div className="flex flex-col md:flex-row items-center gap-10 mb-12">
+            <div className="relative w-48 h-48 md:w-56 md:h-56 rounded-full overflow-hidden border-4 border-white shadow-lg flex-shrink-0">
+              <img 
+                src="/public/lovable-uploads/f1d63896-db64-4ae0-8b82-78dc55e98a8d.png" 
+                alt="Naza" 
+                className="w-full h-full object-cover"
+              />
+            </div>
             
-            <p>
-              Empecé como freelance, sin saber nada de marketing. Solo con las ganas de viajar por el mundo mientras trabajaba. Estudié administración, así que TODO me era nuevo en este mundo.
-            </p>
-            
+            <div className="space-y-4 text-lg text-evo-blue/90 leading-relaxed">
+              <p className="font-medium text-xl text-evo-red">
+                Hola, soy Naza.
+              </p>
+              <p>
+                Llevo tres años ayudando a mujeres a hacer crecer sus negocios usando la creación de contenido como <strong>herramienta</strong>.
+              </p>
+              <p>
+                Empecé como freelance, sin saber nada de marketing. Solo con las ganas de viajar por el mundo mientras trabajaba. Estudié administración, así que TODO me era nuevo en este mundo.
+              </p>
+            </div>
+          </div>
+          
+          <div className="space-y-6 text-lg text-evo-blue/90 leading-relaxed">
             <p>
               Hice pasantías no pagadas, tomé miles de cursos en LinkedIn, leí libros, vi tutoriales de 5hrs en YouTube... aprendí haciendo.
             </p>

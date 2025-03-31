@@ -26,6 +26,11 @@ const Hero = () => {
       </div>
       <div className="absolute right-0 top-0 w-full md:w-1/2 h-full opacity-10 bg-pattern bg-no-repeat bg-contain bg-right -z-10"></div>
       
+      {/* Add profile image to the hero background with low opacity */}
+      <div className="absolute right-0 bottom-0 w-full md:w-1/3 h-full opacity-15 -z-10">
+        <img src="/public/lovable-uploads/f1d63896-db64-4ae0-8b82-78dc55e98a8d.png" alt="" className="w-full h-full object-contain object-bottom" />
+      </div>
+      
       <div className="container mx-auto px-4 md:px-8">
         <div className="max-w-3xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-serif font-semibold text-evo-blue mb-6 leading-tight animate-fade-in">
@@ -47,7 +52,7 @@ const Hero = () => {
             <Button
               onClick={scrollToNextSection} 
               variant="ghost"
-              className="text-evo-blue hover:bg-transparent hover:text-evo-red font-medium flex items-center gap-2 px-6 py-6 transition-colors border-0"
+              className="text-evo-blue hover:text-evo-red font-medium flex items-center gap-2 px-6 py-6 transition-colors border-0"
             >
               Descubre más <ArrowDown size={16} />
             </Button>

@@ -22,7 +22,7 @@ const Pricing = () => {
             Y dejar el estrés cotidiano de sentirse confundida:
           </p>
           
-          <div className="bg-white p-10 md:p-12 rounded-2xl shadow-md max-w-md mx-auto mb-10 transform transition-all hover:scale-105 duration-300 border-2 border-evo-red/10">
+          <div className="bg-white p-10 md:p-12 rounded-2xl shadow-lg max-w-md mx-auto mb-10 transform transition-all hover:scale-105 duration-300 border-2 border-evo-red/20">
             <div className="flex items-center justify-center gap-4 mb-8">
               <span className="text-evo-blue/60 line-through text-2xl">$200</span>
               <span className="text-evo-red text-5xl font-bold">$60</span>
